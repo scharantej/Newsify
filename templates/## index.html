@@ -6,18 +6,7 @@
 </head>
 <body>
 <h1>Recent News Articles</h1>
-<form action="/search" method="post">
-<input type="text" name="search_term" placeholder="Search articles">
-<input type="submit" value="Search">
-</form>
-<ul id="articles">
-{% for article in articles %}
-<li>
-<a href="/article/{{ article.id }}">{{ article.title }}</a>
-</li>
-{% endfor %}
-</ul>
+<div id="news-articles"></div>
 </body>
 </html>
-
 
